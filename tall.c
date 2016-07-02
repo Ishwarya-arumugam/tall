@@ -1,0 +1,30 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+int i,j,a[50],t,b,n;
+clrscr();
+for(i=1;i<=50;i++)
+{
+scanf("%d",&a[i]);
+}
+scanf("%d",&n);
+for(i=1;i<=50;i++)
+{
+for(j=i+1;j<=50;j++)
+{
+if(a[i]<a[j])
+{
+t=a[i];
+a[i]=a[j];
+a[j]=t;
+}
+}
+}
+for(i=1;i<=50;i++)
+{
+printf("%d",a[i]);
+}
+printf("\n%d",a[n]);
+getch();
+}
